@@ -26,4 +26,14 @@ document.getElementById("calculation").addEventListener("click", function(){
     const balance = totalIncome - totalExpenses;
     console.log(balance);
 
+    // Saving Amount
+
+    const savingAmount = balance * .20;
+    console.log(savingAmount);
+
+    // Remaining Balance Amount
+
+    const remainingBalance = balance - savingAmount;
+    console.log(remainingBalance);
+
 })
