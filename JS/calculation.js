@@ -1,8 +1,6 @@
 document.getElementById("calculation").addEventListener("click", function(){
     const inputIncome = document.getElementById("input-income").value;
-
     const totalIncome = parseInt(inputIncome);
-
 
     // Food Expenses
     const inputFoodExpenses = document.getElementById("input-food-expenses").value;
@@ -21,19 +19,27 @@ document.getElementById("calculation").addEventListener("click", function(){
     const totalExpenses = foodExpenses + rentExpenses + clothesExpenses;
     // console.log(totalExpenses);
     
+    const expenses = document.getElementById("expenses");
+    expenses.innerText = totalExpenses;
 
     // Total Balance Amount
     const balance = totalIncome - totalExpenses;
-    console.log(balance);
-
+    
+    const totalBalance = document.getElementById("balance");
+    totalBalance.innerText = balance;
     // Saving Amount
 
     const savingAmount = balance * .20;
-    console.log(savingAmount);
+    const totalSaving = document.getElementById("saving");
+    totalSaving.innerText = savingAmount;
 
     // Remaining Balance Amount
-
     const remainingBalance = balance - savingAmount;
-    console.log(remainingBalance);
+    const totalRemainingBalance = document.getElementById("remaining");
+    totalRemainingBalance.innerText = remainingBalance;
 
 })
+
+
+
+

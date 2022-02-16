@@ -11,32 +11,57 @@
     <title>Income Expense Calculator</title>
   </head>
   <body>
-    <h1 class="text-center">Income Expense Calculator</h1>
-    <section>
-        <div class="row">
-            <div class="col-lg-6">
-
+                    <!-- Heading Section -->
+    <h1 id="heading" class="text-center">Income Expense Calculator</h1>
+                    <!-- Main Section -->
+    <main class="container mt-5">
+        <section>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="/resources/calculation.jpg" alt="">
+                </div>
+                <div class="col-lg-6 text-center bg-light p-5">
+                    <h4>Income</h4>
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">Income:</label>
+                        <div class="col-sm-10">
+                          <input id="input-income" type="text" class="form-control">
+                        </div>
+                      </div>
+                    <h4>Expenses</h4>
+                    <div class="mb-2 row">
+                        <label class="col-sm-2 col-form-label">Food:</label>
+                        <div class="col-sm-10">
+                          <input id="input-food-expenses" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="mb-2 row">
+                        <label class="col-sm-2 col-form-label">Rent:</label>
+                        <div class="col-sm-10">
+                          <input id="input-rent-expenses" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="mb-4 row">
+                        <label class="col-sm-2 col-form-label">Clothes:</label>
+                        <div class="col-sm-10">
+                          <input id="input-clothes-expenses" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="calculation">Calculate</button>
+                    <h4 class="mb-3 mt-3">Total Expenses: <span id="expenses">0</span></h4>
+                    <h5>Balance: <span id="balance">0</span></h5>
+                    <div class="mb-2 row">
+                        <label class="col-sm-2 col-form-label">Rent:</label>
+                        <div class="col-sm-10">
+                            <input type="text" placeholder="20%"> % <button class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                    <h4>Saving Amount: <span id="saving">0</span> </h4>
+                    <h5>Remaining Balance: <span id="remaining">0</span></h5>
+                </div>
             </div>
-            <div class="col-lg-6 text-center">
-                <h4>Income</h4>
-    
-                Income: <input id="input-income" type="number"><br><br>
-                <h4>Expenses</h4>
-                Food: <input id="input-food-expenses" type="number">
-                <br><br>
-                Rent: <input id="input-rent-expenses" type="number">
-                <br><br>
-                Clothes: <input id="input-clothes-expenses" type="number">
-                <br><br>
-                <button id="calculation">Calculate</button>
-                <h4>Total Expenses</h4>
-                <h5>Balance</h5>
-                Save: <input type="text"> % <button>Save</button>
-                <h4>Saving Amount</h4>
-                <h5>Remaining Balance</h5>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
 
 
