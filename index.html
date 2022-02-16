@@ -18,42 +18,42 @@
         <section>
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="/resources/calculation.jpg" alt="">
+                    <img class="img-fluid h-100" src="/resources/calculation.jpg" alt="">
                 </div>
                 <div class="col-lg-6 text-center bg-light p-5">
                     <h4>Income</h4>
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Income:</label>
                         <div class="col-sm-10">
-                          <input id="input-income" type="text" class="form-control">
+                          <input id="input-income" type="number" class="form-control">
                         </div>
                       </div>
                     <h4>Expenses</h4>
                     <div class="mb-2 row">
                         <label class="col-sm-2 col-form-label">Food:</label>
                         <div class="col-sm-10">
-                          <input id="input-food-expenses" type="text" class="form-control">
+                          <input id="input-food-expenses" type="number" class="form-control">
                         </div>
                     </div>
                     <div class="mb-2 row">
                         <label class="col-sm-2 col-form-label">Rent:</label>
                         <div class="col-sm-10">
-                          <input id="input-rent-expenses" type="text" class="form-control">
+                          <input id="input-rent-expenses" type="number" class="form-control">
                         </div>
                     </div>
                     <div class="mb-4 row">
                         <label class="col-sm-2 col-form-label">Clothes:</label>
                         <div class="col-sm-10">
-                          <input id="input-clothes-expenses" type="text" class="form-control">
+                          <input id="input-clothes-expenses" type="number" class="form-control">
                         </div>
                     </div>
                     <button class="btn btn-primary" id="calculation">Calculate</button>
                     <h4 class="mb-3 mt-3">Total Expenses: <span id="expenses">0</span></h4>
                     <h5>Balance: <span id="balance">0</span></h5>
                     <div class="mb-2 row">
-                        <label class="col-sm-2 col-form-label">Rent:</label>
+                        <label class="col-sm-2 col-form-label">Save:</label>
                         <div class="col-sm-10">
-                            <input type="text" placeholder="20%"> % <button class="btn btn-primary">Save</button>
+                            <input id="input-saving" type="number" placeholder="20%"> % <button id="save" class="btn btn-primary">Save</button>
                         </div>
                     </div>
                     <h4>Saving Amount: <span id="saving">0</span> </h4>
