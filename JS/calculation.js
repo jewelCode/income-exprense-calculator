@@ -34,23 +34,36 @@ document.getElementById("calculation").addEventListener("click", function(){
     const balance = totalIncome - totalExpenses;
     const totalBalance = document.getElementById("balance");
     totalBalance.innerText = balance;
-    // Saving Amount
-
-    // const savingAmount = balance * .20;
-    // const totalSaving = document.getElementById("saving");
-    // totalSaving.innerText = savingAmount;
-
-    // Remaining Balance Amount
-    // const remainingBalance = balance - savingAmount;
-    // const totalRemainingBalance = document.getElementById("remaining");
-    // totalRemainingBalance.innerText = remainingBalance;
-
+    remainingAmount(balance)
+    
 })
+
+// savings function
 
 document.getElementById("save").addEventListener("click", function(){
-    
+    const inputIncome = document.getElementById("input-income").value;
+    const income = parseInt(inputIncome);
+    const inputSaving = document.getElementById("input-saving").value;
+    const savings = parseInt(inputSaving);
+    const savingAmount = document.getElementById("saving");
+    const savingsTotal = income * savings / 100;
+    savingAmount.innerText = savingsTotal;
+    remainingAmount(savingsTotal);
     
 })
+
+// remaining amount
+
+function remainingAmount(balance, savingsTotal){
+    console.log(savingsTotal);
+    const remainingBalance = balance - savingsTotal;
+    return remainingBalance;
+}
+
+
+
+
+
 
 
 
