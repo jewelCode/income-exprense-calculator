@@ -31,10 +31,9 @@ document.getElementById("calculation").addEventListener("click", function(){
     expenses.innerText = totalExpenses;
 
     // Total Balance Amount
-    const balance = totalIncome - totalExpenses;
+    const balanceAmount = totalIncome - totalExpenses;
     const totalBalance = document.getElementById("balance");
-    totalBalance.innerText = balance;
-    remainingAmount(balance)
+    totalBalance.innerText = balanceAmount;
     
 })
 
@@ -48,17 +47,11 @@ document.getElementById("save").addEventListener("click", function(){
     const savingAmount = document.getElementById("saving");
     const savingsTotal = income * savings / 100;
     savingAmount.innerText = savingsTotal;
-    remainingAmount(savingsTotal);
     
 })
 
-// remaining amount
+// Remaining Amount
 
-function remainingAmount(balance, savingsTotal){
-    console.log(savingsTotal);
-    const remainingBalance = balance - savingsTotal;
-    return remainingBalance;
-}
 
 
 
