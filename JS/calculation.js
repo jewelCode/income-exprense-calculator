@@ -53,6 +53,11 @@ document.getElementById("save").addEventListener("click", function(){
 // Remaining Amount
 
 
+function remainingAmount(amount) {
+    
+}
+
+
 
 
 
